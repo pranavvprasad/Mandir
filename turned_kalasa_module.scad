@@ -1,10 +1,10 @@
 
 // ---------- Turned Kalasa Finial Module ----------
 
-module turned_kalasa(h = 60) {
+module turned_kalasa(h = 60,fn=180) {
     scale_factor = h / 45;
     scale([scale_factor, scale_factor, scale_factor])
-    rotate_extrude($fn = 180) {
+    rotate_extrude($fn = fn) {
         cove_pts  = [ for (a = [0 : 6 : 90]) [ 7.5 + 5.5 * cos(a), 2.0 + 3.0 * sin(a) ] ];
         belly_pts = [ for (a = [0 : 3 : 180]) [ 7.5 + 7.0 * sin(a), 5.0 + 17.0 * (a / 180) ] ];
         neck_pts  = [ for (a = [0 : 6 : 90]) [ 6.0 + 1.5 * cos(a), 22.0 + 2.0 * sin(a) ] ];

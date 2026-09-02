@@ -37,7 +37,7 @@ module printed_shikhara(base_w,base_d,roof_top) {
                     for (mx = [-tx_corner, tx_corner]) {
                         for (my = [-ty_corner, ty_corner]) {
                             translate([mx, my, tz + tier_h])
-                                turned_kalasa(h = 28); 
+                                turned_kalasa(h = 28,fn=64); 
                         }
                     }
                 }
@@ -49,7 +49,7 @@ module printed_shikhara(base_w,base_d,roof_top) {
                 translate([0, 0, 5.00])
                     cylinder(h = 10.00, r = 22.00, $fn = 64);
                 translate([0, 0, 15.00])
-                    turned_kalasa(h = 60.00); // Top spire finial
+                    turned_kalasa(h = 60.00,fn=64); // Top spire finial
             }
         }
     }
