@@ -1,6 +1,7 @@
 // ---------- 220x220x220 mm Bounded Shikhara (Phamsana Pyramid) ----------
+include<turned_kalasa_module.scad>
 
-module printed_shikhara() {
+module printed_shikhara(base_w,base_d,roof_top) {
     color([0.95, 0.82, 0.45]) {
         cx = base_w / 2;
         cy = base_d / 2;

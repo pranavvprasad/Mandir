@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 780" width="100%" height="100%" style="background-color: #0f172a; font-family: system-ui, -apple-system, sans-serif;">
+  <defs>
+    <!-- Arrowhead markers for dimension lines -->
+    <marker id="arrow-start" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 10 0 L 0 5 L 10 10 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrow-end" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8"/>
+    </marker>
+    
+    <!-- Fine grid pattern -->
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Grid -->
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+
+  <!-- Title Block -->
+  <text x="575" y="38" fill="#f8fafc" font-size="20" font-weight="700" text-anchor="middle" letter-spacing="1">HYBRID DIY MANDIR — ORTHOGONAL PROJECTIONS</text>
+  <text x="575" y="58" fill="#94a3b8" font-size="13" text-anchor="middle">Wall Height: 400 mm | Scale: 0.95 px/mm | All dimensions in mm</text>
+
+  <!-- ==================================================================== -->
+  <!-- VIEW 1: FRONT ELEVATION (XZ PLANE VIEW)                             -->
+  <!-- ==================================================================== -->
+  <g id="front-elevation">
+    <text x="280" y="95" fill="#38bdf8" font-size="15" font-weight="600" text-anchor="middle">FRONT ELEVATION (XZ PLANE)</text>
+    
+    <!-- Base Reference Line Z=0 (Floor / Deck Bottom) -->
+    <line x1="60" y1="620" x2="500" y2="620" stroke="#475569" stroke-width="1" stroke-dasharray="4,4"/>
+
+    <!-- Corner Base Feet (Z = -16 to 0) -->
+    <!-- Left Foot -->
+    <rect x="100.2" y="620" width="50.6" height="15.2" fill="#d97706" fill-opacity="0.3" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect x="104.0" y="627.6" width="43.0" height="7.6" fill="#d97706" fill-opacity="0.5" stroke="#f59e0b" stroke-width="1"/>
+    <!-- Right Foot -->
+    <rect x="409.2" y="620" width="50.6" height="15.2" fill="#d97706" fill-opacity="0.3" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect x="413.0" y="627.6" width="43.0" height="7.6" fill="#d97706" fill-opacity="0.5" stroke="#f59e0b" stroke-width="1"/>
+
+    <!-- Bottom Wood Deck Plate (Z = 0 to 6.35 mm) -->
+    <rect x="90" y="613.97" width="380" height="6.03" fill="#b45309" stroke="#f59e0b" stroke-width="1.5"/>
+
+    <!-- Front Diya Projection Shelf (Z = 6.35 to 33 mm, centered) -->
+    <rect x="204" y="588.7" width="152" height="25.27" fill="#f59e0b" fill-opacity="0.25" stroke="#f59e0b" stroke-width="1.2" stroke-dasharray="3,3"/>
+
+    <!-- Main Turned Pillars (Wall Height = 400 mm, Z = 6.35 to 406.35 mm) -->
+    <!-- Pillar 1 (Left) -->
+    <g stroke="#e2e8f0" stroke-width="1.5" fill="#334155">
+      <!-- Outer Pillar Profile Outline -->
+      <path d="M 106.5 613.97 L 106.5 233.97 L 144.5 233.97 L 144.5 613.97 Z"/>
+      <!-- Internal turned detail accents -->
+      <line x1="106.5" y1="569.9" x2="144.5" y2="569.9" stroke="#94a3b8" stroke-width="1"/>
+      <line x1="106.5" y1="470.8" x2="144.5" y2="470.8" stroke="#94a3b8" stroke-width="1"/>
+      <line x1="106.5" y1="371.7" x2="144.5" y2="371.7" stroke="#94a3b8" stroke-width="1"/>
+      <line x1="106.5" y1="277.1" x2="144.5" y2="277.1" stroke="#94a3b8" stroke-width="1"/>
+    </g>
+    <!-- Pillar 2 (Right) -->
+    <g stroke="#e2e8f0" stroke-width="1.5" fill="#334155">
+      <path d="M 415.5 613.97 L 415.5 233.97 L 453.5 233.97 L 453.5 613.97 Z"/>
+      <line x1="415.5" y1="569.9" x2="453.5" y2="569.9" stroke="#94a3b8" stroke-width="1"/>
+      <line x1="415.5" y1="470.8" x2="453.5" y2="470.8" stroke="#94a3b8" stroke-width="1"/>
+      <line x1="415.5" y1="371.7" x2="453.5" y2="371.7" stroke="#94a3b8" stroke-width="1"/>
+      <line x1="415.5" y1="277.1" x2="453.5" y2="277.1" stroke="#94a3b8" stroke-width="1"/>
+    </g>
+
+    <!-- Centerlines of Pillars -->
+    <line x1="125.46" y1="640" x2="125.46" y2="165" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="6,4"/>
+    <line x1="434.54" y1="640" x2="434.54" y2="165" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="6,4"/>
+
+    <!-- Top Wood Roof Plate (Z = 406.35 to 412.7 mm, Width = 440 mm including 20 mm overhangs) -->
+    <rect x="71" y="227.94" width="418" height="6.03" fill="#b45309" stroke="#f59e0b" stroke-width="1.5"/>
+
+    <!-- Corner Pillar Kalasas (Top of pillars above roof) -->
+    <path d="M 115 227.94 L 125.46 166.19 L 136 227.94 Z" fill="#f59e0b" fill-opacity="0.7" stroke="#f59e0b" stroke-width="1.2"/>
+    <path d="M 424 227.94 L 434.54 166.19 L 445 227.94 Z" fill="#f59e0b" fill-opacity="0.7" stroke="#f59e0b" stroke-width="1.2"/>
+
+    <!-- Central Stepped Phamsana Shikhara (5 Tiers, Height = 100 mm, Z = 412.7 to 512.7 mm) -->
+    <g fill="#f59e0b" fill-opacity="0.4" stroke="#fbbf24" stroke-width="1.2">
+      <!-- Tier 0: 208 mm wide -->
+      <rect x="181.2" y="208.94" width="197.6" height="19.0"/>
+      <!-- Tier 1: 165 mm wide -->
+      <rect x="201.62" y="189.94" width="156.75" height="19.0"/>
+      <!-- Tier 2: 122 mm wide -->
+      <rect x="222.05" y="170.94" width="115.9" height="19.0"/>
+      <!-- Tier 3: 82 mm wide -->
+      <rect x="241.05" y="151.94" width="77.9" height="19.0"/>
+      <!-- Tier 4: 48 mm wide -->
+      <rect x="257.2" y="132.94" width="45.6" height="19.0"/>
+    </g>
+
+    <!-- Top Spire Cylinders & Kalasa Finial (Height = 75 mm, Z = 512.7 to 587.7 mm) -->
+    <!-- Base Cylinder -->
+    <rect x="255.3" y="123.44" width="49.4" height="9.5" fill="#f59e0b" stroke="#fbbf24" stroke-width="1.2"/>
+    <rect x="259.1" y="113.94" width="41.8" height="9.5" fill="#f59e0b" stroke="#fbbf24" stroke-width="1.2"/>
+    <!-- Top Spire Finial -->
+    <path d="M 265.7 113.94 C 265.7 85 277 75 280 56.95 C 283 75 294.3 85 294.3 113.94 Z" fill="#fbbf24" stroke="#f59e0b" stroke-width="1.5"/>
+
+    <!-- ================= FRONT ELEVATION DIMENSIONS ================= -->
+    <!-- Overall Height: 603.7 mm -->
+    <line x1="45" y1="635.2" x2="45" y2="56.95" stroke="#38bdf8" stroke-width="1" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="40" y1="635.2" x2="60" y2="635.2" stroke="#38bdf8" stroke-width="0.8"/>
+    <line x1="40" y1="56.95" x2="275" y2="56.95" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="2,2"/>
+    <text x="37" y="345" fill="#38bdf8" font-size="12" font-weight="600" text-anchor="middle" transform="rotate(-90 37 345)">TOTAL Z: 603.7 mm</text>
+
+    <!-- Wall Height: 400.0 mm -->
+    <line x1="510" y1="613.97" x2="510" y2="233.97" stroke="#38bdf8" stroke-width="1" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="470" y1="613.97" x2="520" y2="613.97" stroke="#38bdf8" stroke-width="0.8"/>
+    <line x1="489" y1="233.97" x2="520" y2="233.97" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="525" y="428" fill="#38bdf8" font-size="12" font-weight="600" text-anchor="start">wall_h: 400.0 mm</text>
+
+    <!-- Shikhara Height: 175.0 mm -->
+    <line x1="510" y1="227.94" x2="510" y2="56.95" stroke="#38bdf8" stroke-width="1" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="489" y1="227.94" x2="520" y2="227.94" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="525" y="145" fill="#38bdf8" font-size="12" font-weight="600" text-anchor="start">Shikhara: 175.0 mm</text>
+
+    <!-- Base Width: 400.0 mm -->
+    <line x1="90" y1="660" x2="470" y2="660" stroke="#38bdf8" stroke-width="1" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="90" y1="620" x2="90" y2="670" stroke="#38bdf8" stroke-width="0.8"/>
+    <line x1="470" y1="620" x2="470" y2="670" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="280" y="678" fill="#38bdf8" font-size="12" font-weight="600" text-anchor="middle">base_w: 400.0 mm</text>
+
+    <!-- Pillar Center-to-Center Width: 325.3 mm -->
+    <line x1="125.46" y1="695" x2="434.54" y2="695" stroke="#38bdf8" stroke-width="1" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="125.46" y1="635" x2="125.46" y2="705" stroke="#38bdf8" stroke-width="0.8"/>
+    <line x1="434.54" y1="635" x2="434.54" y2="705" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="280" y="712" fill="#38bdf8" font-size="12" font-weight="600" text-anchor="middle">Pillar Pitch X: 325.3 mm</text>
+
+    <!-- Roof Overhang Width: 440.0 mm -->
+    <line x1="71" y1="190" x2="489" y2="190" stroke="#38bdf8" stroke-width="1" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="71" y1="227.94" x2="71" y2="180" stroke="#38bdf8" stroke-width="0.8"/>
+    <line x1="489" y1="227.94" x2="489" y2="180" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="280" y="184" fill="#38bdf8" font-size="11" font-weight="600" text-anchor="middle">Roof Width: 440.0 mm (20mm overhang)</text>
+  </g>
+
+  <!-- ==================================================================== -->
+  <!-- VIEW 2: SIDE ELEVATION (YZ PLANE VIEW)                              -->
+  <!-- ==================================================================== -->
+  <g id="side-elevation">
+    <text x="815" y="95" fill="#38bdf8" font-size="15" font-weight="600" text-anchor="middle">SIDE ELEVATION (YZ PLANE)</text>
+
+    <!-- Base Reference Line Z=0 -->
+    <line x1="580" y1="620" x2="1010" y2="620" stroke="#475569" stroke-width="1" stroke-dasharray="4,4"/>
+
+    <!-- Corner Base Feet (Z = -16 to 0) -->
+    <!-- Front Foot (Pillar Y1) -->
+    <rect x="690.2" y="620" width="50.6" height="15.2" fill="#d97706" fill-opacity="0.3" stroke="#f59e0b" stroke-width="1.5"/>
+    <!-- Rear Foot (Pillar Y2) -->
+    <rect x="885.2" y="620" width="50.6" height="15.2" fill="#d97706" fill-opacity="0.3" stroke="#f59e0b" stroke-width="1.5"/>
+
+    <!-- Main Wood Deck Plate (Y = 0 to 280 mm) -->
+    <rect x="680" y="613.97" width="266" height="6.03" fill="#b45309" stroke="#f59e0b" stroke-width="1.5"/>
+
+    <!-- Front Diya Projection Deck Extension (Y = -80 to 0 mm) -->
+    <rect x="604" y="613.97" width="76" height="6.03" fill="#b45309" stroke="#f59e0b" stroke-width="1.5"/>
+    <!-- Front Diya Shelf Unit -->
+    <rect x="611.6" y="588.7" width="68.4" height="25.27" fill="#f59e0b" fill-opacity="0.4" stroke="#f59e0b" stroke-width="1.5"/>
+
+    <!-- Main Turned Pillars (Y1 = 37.33 mm, Y2 = 242.67 mm) -->
+    <!-- Front Pillar -->
+    <g stroke="#e2e8f0" stroke-width="1.5" fill="#334155">
+      <rect x="696.5" y="233.97" width="38" height="380"/>
+      <line x1="696.5" y1="569.9" x2="734.5" y2="569.9" stroke="#94a3b8" stroke-width="1"/>
+      <line x1="696.5" y1="470.8" x2="734.5" y2="470.8" stroke="#94a3b8" stroke-width="1"/>
+      <line x1="696.5" y1="371.7" x2="734.5" y2="371.7" stroke="#94a3b8" stroke-width="1"/>
+    </g>
+    <!-- Rear Pillar -->
+    <g stroke="#e2e8f0" stroke-width="1.5" fill="#334155">
+      <rect x="891.5" y="233.97" width="38" height="380"/>
+      <line x1="891.5" y1="569.9" x2="929.5" y2="569.9" stroke="#94a3b8" stroke-width="1"/>
+      <line x1="891.5" y1="470.8" x2="929.5" y2="470.8" stroke="#94a3b8" stroke-width="1"/>
+      <line x1="891.5" y1="371.7" x2="929.5" y2="371.7" stroke="#94a3b8" stroke-width="1"/>
+    </g>
+
+    <!-- Centerlines of Pillars in YZ view -->
+    <line x1="715.46" y1="640" x2="715.46" y2="165" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="6,4"/>
+    <line x1="910.54" y1="640" x2="910.54" y2="165" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="6,4"/>
+
+    <!-- Top Wood Roof Plate (Y = -20 to 300 mm, Depth = 320 mm) -->
+    <rect x="661" y="227.94" width="304" height="6.03" fill="#b45309" stroke="#f59e0b" stroke-width="1.5"/>
+
+    <!-- Corner Pillar Kalasas (Side view profile) -->
+    <path d="M 705 227.94 L 715.46 166.19 L 726 227.94 Z" fill="#f59e0b" fill-opacity="0.7" stroke="#f59e0b" stroke-width="1.2"/>
+    <path d="M 900 227.94 L 910.54 166.19 L 921 227.94 Z" fill="#f59e0b" fill-opacity="0.7" stroke="#f59e0b" stroke-width="1.2"/>
+
+    <!-- Central Stepped Phamsana Shikhara Tiers (Centered at Y = 140 mm) -->
+    <g fill="#f59e0b" fill-opacity="0.4" stroke="#fbbf24" stroke-width="1.2">
+      <!-- Tier 0: 208 mm depth (Y: 36 to 244 mm -> SVG X: 714.2 to 911.8) -->
+      <rect x="714.2" y="208.94" width="197.6" height="19.0"/>
+      <!-- Tier 1: 165 mm depth -->
+      <rect x="734.62" y="189.94" width="156.75" height="19.0"/>
+      <!-- Tier 2: 122 mm depth -->
+      <rect x="755.05" y="170.94" width="115.9" height="19.0"/>
+      <!-- Tier 3: 82 mm depth -->
+      <rect x="774.05" y="151.94" width="77.9" height="19.0"/>
+      <!-- Tier 4: 48 mm depth -->
+      <rect x="790.2" y="132.94" width="45.6" height="19.0"/>
+    </g>
+
+    <!-- Top Spire Finial -->
+    <rect x="788.3" y="123.44" width="49.4" height="9.5" fill="#f59e0b" stroke="#fbbf24" stroke-width="1.2"/>
+    <rect x="792.1" y="113.94" width="41.8" height="9.5" fill="#f59e0b" stroke="#fbbf24" stroke-width="1.2"/>
+    <path d="M 798.7 113.94 C 798.7 85 810 75 813 56.95 C 816 75 827.3 85 827.3 113.94 Z" fill="#fbbf24" stroke="#f59e0b" stroke-width="1.5"/>
+
+    <!-- ================= SIDE ELEVATION DIMENSIONS ================= -->
+    <!-- Base Depth: 280.0 mm -->
+    <line x1="680" y1="660" x2="946" y2="660" stroke="#38bdf8" stroke-width="1" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="680" y1="620" x2="680" y2="670" stroke="#38bdf8" stroke-width="0.8"/>
+    <line x1="946" y1="620" x2="946" y2="670" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="813" y="678" fill="#38bdf8" font-size="12" font-weight="600" text-anchor="middle">base_d: 280.0 mm</text>
+
+    <!-- Front Diya Shelf Projection Depth: 80.0 mm -->
+    <line x1="604" y1="660" x2="680" y2="660" stroke="#38bdf8" stroke-width="1" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="604" y1="614" x2="604" y2="670" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="642" y="678" fill="#38bdf8" font-size="11" font-weight="600" text-anchor="middle">80.0 mm</text>
+
+    <!-- Total Footprint Depth: 360.0 mm -->
+    <line x1="604" y1="695" x2="946" y2="695" stroke="#38bdf8" stroke-width="1" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="604" y1="670" x2="604" y2="705" stroke="#38bdf8" stroke-width="0.8"/>
+    <line x1="946" y1="670" x2="946" y2="705" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="775" y="712" fill="#38bdf8" font-size="12" font-weight="600" text-anchor="middle">Total Depth: 360.0 mm</text>
+
+    <!-- Pillar Pitch Y: 205.3 mm -->
+    <line x1="715.46" y1="200" x2="910.54" y2="200" stroke="#38bdf8" stroke-width="1" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="715.46" y1="233.97" x2="715.46" y2="190" stroke="#38bdf8" stroke-width="0.8"/>
+    <line x1="910.54" y1="233.97" x2="910.54" y2="190" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="813" y="195" fill="#38bdf8" font-size="11" font-weight="600" text-anchor="middle">Pillar Pitch Y: 205.3 mm</text>
+
+    <!-- Roof Depth: 320.0 mm -->
+    <line x1="661" y1="165" x2="965" y2="165" stroke="#38bdf8" stroke-width="1" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="661" y1="227.94" x2="661" y2="155" stroke="#38bdf8" stroke-width="0.8"/>
+    <line x1="965" y1="227.94" x2="965" y2="155" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="813" y="159" fill="#38bdf8" font-size="11" font-weight="600" text-anchor="middle">Roof Depth: 320.0 mm (20mm overhang)</text>
+  </g>
+
+  <!-- Legend & Material Notes -->
+  <g transform="translate(71, 735)" font-size="11" fill="#94a3b8">
+    <rect x="-10" y="-12" width="1010" height="32" fill="#1e293b" rx="4" stroke="#334155" stroke-width="1"/>
+    <text x="0" y="8" fill="#f8fafc" font-weight="600">STRUCTURE SPECIFICATIONS:</text>
+    <text x="170" y="8">• Deck/Roof Plate: 6.35 mm (1/4") Wood</text>
+    <text x="430" y="8">• Pillar Wall Height: 400.0 mm (PVC + Printed Sleeve)</text>
+    <text x="740" y="8">• Corner Feet: 16.0 mm (Under Deck)</text>
+  </g>
+</svg>
