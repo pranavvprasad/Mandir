@@ -47,13 +47,27 @@ module printed_shikhara_solid(base_w,base_d,roof_top,includeKalasha=true) {
                 tz = i * tier_h;
 
                 translate([-tw/2, -td/2, tz]) {
+                    // Layer 1: Base step (4mm)
                     cube([tw, td, 4]);
+                    
+                    // Layer 2: Recessed middle neck (8mm)
                     translate([2.67, 2.67, 4])
-                        cube([tw - 5.33, td - 5.33, tier_h - 8]);
-                    translate([-2.67, -2.67, tier_h - 4])
+                        cube([tw - 5.33, td - 5.33, 8]);
+                        
+                    // Layer 3: 45-degree chamfer transition (5.33mm rise over 5.33mm run)
+                    translate([tw/2, td/2, 12])
+                        rotate([0, 0, 45])
+                            cylinder(
+                                h  = 4, 
+                                r1 = ((tw - 5.33) / 2) * sqrt(2), 
+                                r2 = ((tw + 5.33) / 2) * sqrt(2), 
+                                $fn = 4
+                            );
+                    
+                    // Layer 3: Top overhang cap (4mm)
+                    translate([-2.67, -2.67, 16])
                         cube([tw + 5.33, td + 5.33, 4]);
                 }
-
                 if (includeKalasha &&(i == 1 || i == 2)) {
                     tx_corner = tw / 2 - 8;
                     ty_corner = td / 2 - 8;
@@ -64,7 +78,6 @@ module printed_shikhara_solid(base_w,base_d,roof_top,includeKalasha=true) {
                         }
                     }
                 }
-                
             }
 
             top_z = num_tiers * tier_h; // 100mm
