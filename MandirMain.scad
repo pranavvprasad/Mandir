@@ -80,6 +80,6 @@ for (pt = [[pillar_x1, pillar_y1], [pillar_x2, pillar_y1],
     turned_sleeve(pt[0], pt[1]);
 }
 
-printed_shikhara(base_w,base_d,roof_top);
+printed_shikhara_hollow(base_w,base_d,roof_top);
 pillar_corner_kalasas();
 }
