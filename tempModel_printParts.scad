@@ -17,5 +17,8 @@ include<parameters.scad>
 //include<turned_pillar_profile_module.scad>
 //turned_half_pillar_profile(r_inner,sleeve_wall_t,sleeve_h);
 
-include<corner_base_module.scad>
-corner_base(0,0);
+//include<corner_base_module.scad>
+//corner_base(0,0);
+
+include<printed_shikhara_module.scad>
+printed_shikhara(base_w,base_d,roof_top);
