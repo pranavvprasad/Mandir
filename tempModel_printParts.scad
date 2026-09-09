@@ -20,5 +20,8 @@ include<parameters.scad>
 //include<corner_base_module.scad>
 //corner_base(0,0);
 
-include<printed_shikhara_module.scad>
-printed_shikhara(base_w,base_d,roof_top);
+//include<printed_shikhara_module.scad>
+//printed_shikhara(base_w,base_d,roof_top);
+
+include<printed_diya_shelf_module.scad>;
+printed_diya_shelf(); 

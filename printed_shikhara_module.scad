@@ -68,7 +68,7 @@ module printed_shikhara_solid(base_w,base_d,roof_top,includeKalasha=true) {
                     translate([-2.67, -2.67, 16])
                         cube([tw + 5.33, td + 5.33, 4]);
                 }
-                if (includeKalasha &&(i == 1 || i == 2)) {
+                if (includeKalasha &&( i == 1 || i == 2)) {
                     tx_corner = tw / 2 - 8;
                     ty_corner = td / 2 - 8;
                     for (mx = [-tx_corner, tx_corner]) {

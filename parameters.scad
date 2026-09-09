@@ -26,8 +26,8 @@ arch_r = 50.67;
 roof_overhang = 20;       
 
 diya_proj_depth = 80;     
-diya_proj_w     = 160;    
-diya_seat_r     = 26.67;  
+diya_proj_w     = 140;    
+diya_seat_r     = 22;  
 
 // ---------- Derived Coordinates & Heights ----------
 deck_top   = wood_t;
